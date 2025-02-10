@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                       // Use ES6 features
+      "module": "CommonJS",                   // Use CommonJS for module system (which is what Node.js uses)
+      "esModuleInterop": true,                // Ensure compatibility with CommonJS modules
+      "skipLibCheck": true,                   // Skip type checking of declaration files
+      "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing
+      "outDir": "./dist",                     // Output directory for compiled files
+      "rootDir": "./tests",                   // Root directory for your TypeScript files
+      "strict": true                          // Enable all strict type-checking options
+    },
+    "include": [
+      "tests/**/*.ts",                        // Include all TypeScript files under tests folder
+      "features/**/*.feature"                      // Include step definition files under features folder
+    ],
+    "exclude": [
+      "node_modules"                          // Exclude node_modules
+    ]
+  }
+  

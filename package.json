@@ -1,0 +1,29 @@
+{
+  "name": "playwrightcucumberapi",
+  "version": "1.0.0",
+  "description": "PlaywrightCucumberApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test",
+     "generate-report": "cucumber-html-reporter --jsonFile=reports/cucumber_report.json --output=output_reports/cucumber_report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonutMoldovan/PlaywrightCucumberApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IonutMoldovan/PlaywrightCucumberApi/issues"
+  },
+  "homepage": "https://github.com/IonutMoldovan/PlaywrightCucumberApi#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

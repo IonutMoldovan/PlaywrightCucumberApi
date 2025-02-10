@@ -1,0 +1,252 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing-for-rijksmuseum;retrieve-collection-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Retrieve collection successfully",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have the API URL and key",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17094599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I make a GET request to retrieve the collection",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1579942600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1942600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should contain a list of art objects",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3653999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-rijksmuseum;retrieve-details-of-a-specific-object",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Retrieve details of a specific object",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I have the API URL and key",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1511600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I make a GET request for the object with object number \"SK-C-5\"",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134726500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 631799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should contain the object number \"SK-C-5\"",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3501000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-rijksmuseum;handle-invalid-object-number",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Handle invalid object number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I have the API URL and key",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1745500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I make a GET request for the object with object number \"INVALID123\"",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46730200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the response body should indicate an error",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2610700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-rijksmuseum;handle-missing-api-key",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Handle missing API key",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I have the API URL",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I make a GET request with missing API key",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30331000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\steps\\api-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 689200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing-for-rijksmuseum",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing for Rijksmuseum",
+    "tags": [],
+    "uri": "tests\\features\\api-tests.feature"
+  }
+]
