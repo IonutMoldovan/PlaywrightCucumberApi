@@ -27,10 +27,12 @@ Running Tests
 To run the tests, execute the following command:
 
 npm run test
+
 This will execute all the scenarios defined in the feature files (located in the tests/features/ folder). The test results will be logged to the console.
 
 2. Generate HTML Report:
 After running the tests, you can generate an HTML report using the following command:
 
 npm run generate-report
+
 This will generate the report in the reports/ folder. The default report file will be reports/cucumber_report.html.
